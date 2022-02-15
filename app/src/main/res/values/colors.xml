@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!--    85%  主要文字-->
+    <color name="color_d9000000">#D9000000</color>
+    <!--    65%  次要文字-->
+    <color name="color_a6000000">#A6000000</color>
+    <!--    25%  禁用文字-->
+    <color name="color_40000000">#40000000</color>
+    <!--    9% 分割线-->
+    <color name="color_17000000">#17000000</color>
+    <color name="color_FFF5222D">#FFF5222D</color>
+    <!--    4% 背景-->
+    <color name="color_0a000000">#0A000000</color>
+    <color name="color_06c05f">#06c05f</color>
+</resources>

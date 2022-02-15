@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_rv"
+        android:layout_width="match_parent"
+        android:paddingEnd="15dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/publish_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_06c05f_corners_5"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="5dp"
+            android:text="@string/publish"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_rv"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <com.example.picturedrag.layout.EditTextWithScrollView
+                android:id="@+id/content_edit"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:autofillHints="@string/edittext_msg"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="@string/edittext_msg"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:paddingStart="20dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/color_d9000000"
+                android:textColorHint="@color/color_40000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/bottom_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_17000000" />
+
+                <TextView
+                    android:id="@+id/location_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/location"
+                    android:textColor="@color/color_d9000000"
+                    android:textSize="14sp"
+                    app:drawableEndCompat="@drawable/ic_right"
+                    app:drawableStartCompat="@drawable/ic_history" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_17000000" />
+
+                <TextView
+                    android:id="@+id/remind_who_to_see_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/remind_who_to_see"
+                    android:textColor="@color/color_d9000000"
+                    android:textSize="14sp"
+                    app:drawableEndCompat="@drawable/ic_right"
+                    app:drawableStartCompat="@drawable/ic_history" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_17000000" />
+
+                <TextView
+                    android:id="@+id/who_can_see_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/who_can_see"
+                    android:textColor="@color/color_d9000000"
+                    android:textSize="14sp"
+                    app:drawableEndCompat="@drawable/ic_right"
+                    app:drawableStartCompat="@drawable/ic_history" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_17000000" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pic_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_edit"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                app:spanCount="3" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/delete_area_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_FFF5222D"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/delete_area_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/delete_pic"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/ic_delete_white" />
+    </LinearLayout>
+
+</RelativeLayout>

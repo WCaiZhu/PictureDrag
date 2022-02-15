@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">图片拖拽</string>
+
+
+    <string name="edittext_msg">这一刻的想法. . .</string>
+    <string name="location">所在位置</string>
+    <string name="remind_who_to_see">提醒谁看</string>
+    <string name="who_can_see">谁可以看</string>
+    <string name="delete_pic">拖拽到此删除</string>
+    <string name="todo">TODO</string>
+    <string name="publish">发表</string>
+    <string name="loosen_delete_pic">松手即可删除</string>
+    <string name="drag_delete_pic">拖到此处删除</string>
+    <string name="dialog_cxczxz">从相册选择图片</string>
+    <string name="dialog_take_photo">拍照</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="publish_success">你的想法发布成功啦</string>
+</resources>

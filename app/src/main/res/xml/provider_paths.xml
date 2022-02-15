@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <files-path name="files" path="" />
+        <cache-path name="cache" path="" />
+        <external-path name="external" path="" />
+        <external-files-path name="external_file_path" path="" />
+        <external-cache-path name="external_cache_path" path="" />
+        <!--<files-path name="name" path="" />&lt;!&ndash;Context.getFilesDir()&ndash;&gt;-->
+        <!--<cache-path name="name" path="" /> &lt;!&ndash;getCacheDir()&ndash;&gt;-->
+        <!--<external-path name="name" path="" />&lt;!&ndash;Environment.getExternalStorageDirectory()&ndash;&gt;-->
+        <!--<external-files-path name="name" path="" />&lt;!&ndash;表示应用程序外部存储区域根目录中的文件。-->
+<!--该子目录的根路径与Context＃getExternalFilesDir（String）Context.getExternalFilesDir（null）返回的值相同。&ndash;&gt;-->
+        <!--<external-cache-path name="name" path="" />&lt;!&ndash;Context.getExternalCacheDir()&ndash;&gt;-->
+    </paths>
+</resources>
